@@ -1,0 +1,114 @@
+.root {
+    -fx-accent: #0a150f;
+    -fx-font-family: poppins;
+}
+
+
+
+.logo {
+    -fx-opacity: 0.8;
+}
+
+.drawer-item {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-min-height: 50px;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-font-size: 12pt;
+    -fx-cursor: hand;
+}
+
+.drawer-item .icon {
+    -fx-fill: white;
+}
+
+.drawer-item:selected .icon {
+        -fx-fill: -fx-accent;
+}
+.drawer-item:selected {
+    -fx-background-color: -green;
+    -fx-text-fill: -fx-accent;
+}
+
+
+
+.banner {
+    -fx-min-height: 20px;
+    -fx-background-color: linear-gradient(to right, -light-gray-2, -light-gray);
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-border-color: -light-gray-2;
+    -fx-background-radius: 10px 0px 0px 0px;
+    -fx-border-radius: 10px 0px 0px 0px;
+    -fx-border-width: 2px;
+}
+
+.card-item {
+        -fx-background-color: -light-gray;
+}
+
+.card-item:selected {
+    -fx-background-color: derive(black, 20%);
+}
+
+.card-item:selected Text {
+    -fx-fill: white;
+}
+
+.card-item:selected .card {
+    -fx-border-color: white;
+}
+
+.card-item:selected .card {
+    -fx-background-color: linear-gradient(to right, -elegant, derive(-elegant, 50%));
+}
+
+.card-item:selected .card {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-translate-x: -10;
+    -fx-translate-y: -8;
+}
+
+.card-item:selected Circle {
+    -fx-fill: white;
+}
+
+.card-item:selected {
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.button-manage {
+    -fx-background-color: transparent;
+    -fx-border-color: -medium-gray;
+    -fx-padding: 10px;
+}
+
+.custom-card {
+    -fx-background-color: -light-gray;
+    -fx-background-radius: 10px;
+}
+
+.custom-card > .button {
+    -fx-background-color: -light-gray-2;
+    -fx-padding: 0px;
+    -fx-rotate: 180;
+    -fx-min-height: 100px;
+    -fx-min-width: 100px;
+    -fx-background-radius: 100px;
+    -fx-translate-x: 30px;
+    -fx-translate-y: 30px;
+}
+
+.custom-card > .button > .icon-container {
+    -fx-translate-x: 10px;
+    -fx-translate-y: 5px;
+}
+
+
