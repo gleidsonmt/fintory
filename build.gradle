@@ -35,7 +35,7 @@ javafx {
 }
 
 dependencies {
-    implementation project(":glad")
+    implementation fileTree('vendor') { include '*.jar' }
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
