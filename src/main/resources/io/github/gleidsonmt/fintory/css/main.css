@@ -17,6 +17,17 @@ Text {
     -fx-font-family: "Poppins SemiBold";
 }
 
+.progress-bar {
+     -fx-pref-height : 20px;
+     -fx-min-height : 20px;
+     -fx-background-radius: 20px;
+     -fx-background-color: red;
+ }
+
+
+
+
+
 .list-view,
 .list-view:vertical,
 .list-view:focused:vertical,
@@ -60,3 +71,4 @@ Text {
 .list-view .virtual-flow .clipped-container .sheet .list-cell:hover  {
     -fx-background-color: -light-gray-2;
 }
+

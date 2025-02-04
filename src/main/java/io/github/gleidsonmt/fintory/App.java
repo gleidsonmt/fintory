@@ -1,5 +1,6 @@
 package io.github.gleidsonmt.fintory;
 
+import io.github.gleidsonmt.fintory.utils.Assets;
 import io.github.gleidsonmt.glad.base.Container;
 import io.github.gleidsonmt.glad.base.Root;
 import io.github.gleidsonmt.glad.theme.Css;
@@ -31,16 +32,16 @@ public class App extends Application {
                 Css.SHAPES,
                 Css.PROPERTIES,
                 Css.BOOTSTRAP,
-                Css.IMMERSIVE_SCROLL
+                Css.IMMERSIVE_SCROLL,
+                Css.PROGRESS_BAR
         );
 
         Scene scene = createScene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.UNDECORATED);
-        scene.getStylesheets().addAll(
-                Objects.requireNonNull(getClass().getResource("css/main.css")).toExternalForm(),
-                Objects.requireNonNull(getClass().getResource("css/drawer.css")).toExternalForm(),
-                Objects.requireNonNull(getClass().getResource("css/progress-bar.css")).toExternalForm()
+        root.getStylesheets().addAll(
+                Assets.getCSS("main.css"),
+                Assets.getCSS("drawer.css")
         );
         stage.setScene(scene);
         stage.show();
