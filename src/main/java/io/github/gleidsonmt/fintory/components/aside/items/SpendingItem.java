@@ -50,20 +50,17 @@ public class SpendingItem extends GridPane {
         legend.getStyleClass().add("legend");
         Text percent = new Text("10%");
 
-
         grid.add(title, 0,0);
         grid.add(subtitle, 0,1);
         grid.add(progressBar, 0,2);
         grid.add(legend, 0,3);
         grid.add(percent, 1,3);
 
-
         progressBar.setPrefWidth(2000);
         GridPane.setColumnSpan(progressBar, 2);
 
         GridPane.setValignment(title, VPos.TOP);
 
-        // 135
         RowConstraints row1 = new RowConstraints();
         row1.setPrefHeight(50);
         RowConstraints row2 = new RowConstraints();
@@ -82,7 +79,6 @@ public class SpendingItem extends GridPane {
         col2.setHalignment(HPos.RIGHT);
         grid.getColumnConstraints().setAll(col1, col2);
 
-        //grid.setGridLinesVisible(true);
         return grid;
     }
 
@@ -102,12 +98,9 @@ public class SpendingItem extends GridPane {
         pane.getChildren().setAll(container, arrowButton);
         StackPane.setAlignment(arrowButton, Pos.BOTTOM_RIGHT);
 
-//        pane.getChildren().add(rect);
         Platform.runLater(() -> {
 
             Rectangle rect = new Rectangle();
-//            rect.setWidth(pane.getWidth());
-//            rect.setHeight(pane.getHeight());
             rect.widthProperty().bind(pane.widthProperty());
             rect.heightProperty().bind(pane.heightProperty());
             pane.setClip(rect);
